@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- scrolling js -->
+    <script defer src="js/site.js"></script>
+
+    <title>Explore</title>
+</head>
+
+<body>
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#" class="logo">interact.net</a>
+        <div class="nav-flex">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="interactions.html">Interactions</a></li>
+            </ul>
+            <ion-icon onclick="onToggleMenu(this)" size="large" style="color:white;" name="menu"
+                class="menu"></ion-icon>
+        </div>
+    </nav>
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+        <div>
+            <button onclick="togglePlayPause()">
+                <ion-icon id="playPauseIcon" size="large" name="play-outline"></ion-icon>
+            </button>
+            <button onclick="skip()"><ion-icon size="large" name="play-skip-forward-outline"></ion-icon></button>
+        </div>
+        <div id="music-info">Artist - Song</div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- HOME/HERO SECTION -->
+    <section class="paralax">
+        <img src="images/stars.png" alt="stars" id="stars">
+        <img src="images/moon.png" alt="moon" id="moon">
+        <h1 id="paralax-text" class="hidden">Welcome!</h1>
+    </section>
+    <div class="custom-shape-divider-bottom-1713735126">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <!-- music player -->
+    <audio id="music"></audio>
+    <div class="anotha"></div>
+
+    <!-- SCOREBOARD -->
+    <div class="scoreboard">
+        <div class="score">
+            <p id="current-score"></p>
+        </div>
+    </div>
+
+    <div class="modal-outer">
+        <div class="modal-inner">
+            <h1>You Won!</h1>
+            <h3>You outpaced the circle</h3>
+            <p>click anywhere outside this card to continue</p>
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- WINDOWS -->
+    <section>
+        <div id="about">
+
+            <ion-icon name="eye-outline"></ion-icon>
+            <h2>What is this?</h2>
+            <div class="game">
+                <div>
+                    <p> This circle will try to run away from you</p>
+                </div>
+                <div>
+                    <p>Your score will begin displaying in bottom right</p>
+                </div>
+                <div class="game1">
+                    <p>Look out other interactive elements</p>
+                </div>
+                <div class="game1">
+                    <p>Some may even be hidden...</p>
+                </div>
+            </div>
+
+
+        </div>
+        <p class="float hidden">Check out each window</p>
+
+        <div class="windows hidden">
+            <a href="wind1.html">
+                <figure class="hvr-grow">
+                    <img src="images/window.png" alt="window1">
+                    <figcaption>1</figcaption>
+                </figure>
+            </a>
+            <a href="wind2.html">
+                <figure class="hvr-grow">
+                    <img src="images/window1.png" alt="window1">
+                    <figcaption>2</figcaption>
+                </figure>
+            </a>
+            <a href="wind3.html">
+                <figure class="hvr-grow">
+                    <img src="images/window2.png" alt="window1">
+                    <figcaption>3</figcaption>
+                </figure>
+            </a>
+            <a href="wind4.html">
+                <figure class="hvr-grow">
+                    <img src="images/window3.png" alt="window1">
+                    <figcaption>4</figcaption>
+                </figure>
+            </a>
+            <a href="wind5.html">
+                <figure class="hvr-grow">
+                    <img src="images/window5.png" alt="window1">
+                    <figcaption>5</figcaption>
+                </figure>
+            </a>
+            <a href="wind6.html">
+                <figure class="hvr-grow">
+                    <img src="images/window6.png" alt="window1">
+                    <figcaption>6</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div id="preloader">
+            <div class="preload-item"></div>
+            <div class="preload-item"></div>
+            <div class="preload-item"></div>
+            <div class="preload-item"></div>
+            <div class="preload-item"></div>
+            <div class="preload-item"></div>
+            <div class="preload-item"></div>
+            <div class="preload-item"></div>
+          </div>
+    </section>
+
+    <!-- lil wavy DIVIDER -->
+    <div class="spacer waves">
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- STAIRS CIRCLES BLOBS -->
+    <section class="three">
+        <!-- blobs -->
+        <div class="blob">
+            <img src="images/circ.png" alt="circle">
+            <a href="egg.html"><img src="images/circ.png" alt="circle"></a>
+            <img src="images/circ.png" alt="circle">
+            <img src="images/circ.png" alt="circle">
+            <img src="images/circ.png" alt="circle">
+        </div>
+        <!-- circles -->
+        <img src="images/circle.png" alt="circle" class="circle hvr-grow">
+        <img src="images/circle.png" alt="circle" class="circle1 rotate1">
+        <!-- stairs -->
+        <img src="images/stairs.png" alt="stairs" class="stairs">
+        <img src="images/circle.png" alt="circle" class="circle4 rotate">
+
+        <img src="images/circle.png" alt="circle" class="circle3 hvr-grow">
+
+        <img src="images/stairs1.png" alt="stairs cont...">
+    </section>
+    <!-- blobs -->
+    <section class="three">
+        <div class="image-group">
+            <img src="images/blobb.png" alt="blob" class="blob-large">
+            <img src="images/blobb1.png" alt="blob" class="blob-bean">
+        </div>
+    </section>
+
+    <!-- ROTATING LINE SHAPES -->
+    <div class="lil-bit">
+        <figure class="hidden">
+            <img src="images/lines1.png" alt="" class="rotate1">
+        </figure>
+        <figure class="hidden">
+            <img src="images/lines.png" alt="" class="rotate">
+        </figure>
+        <figure class="hidden">
+            <img src="images/lines2.png" alt="" class="rotate1">
+        </figure>
+    </div>
+
+    <!-- stacked DIVIDER -->
+    <div class="spacer stacked"></div>
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- END -->
+    <article>
+
+        <!-- circles -->
+        <div class="circs hidden">
+            <img src="images/ccirc.png" alt="" class="rotate1">
+            <img src="images/ccirc.png" alt="" class="rotate">
+            <img src="images/ccirc.png" alt="" class="rotate1">
+        </div>
+    </article>
+
+    <!-- footer -->
+    <footer>
+        <p>made by Isa Dockter | source code -></p>
+        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+    </footer>
+
+    <!-- JAVASCRIPT for music-->
+    <script src="js/music.js"></script>
+
+</body>
+
+</html>

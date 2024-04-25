@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- scrolling js -->
+    <script defer src="js/site.js"></script>
+
+    <title>Interactions</title>
+</head>
+
+<body>
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#" class="logo">interact.net</a>
+        <div class="nav-flex">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="interactions.html" class="active">Interactions</a></li>
+            </ul>
+            <ion-icon size="large" style="color:white;" name="menu" class="menu"></ion-icon>
+        </div>
+    </nav>
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+        <div>
+            <button onclick="togglePlayPause()">
+                <ion-icon id="playPauseIcon" size="large" name="play-outline"></ion-icon>
+            </button>
+            <button onclick="skip()"><ion-icon size="large" name="play-skip-forward-outline"></ion-icon></button>
+        </div>
+        <div id="music-info">Artist - Song</div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- HOME/HERO SECTION -->
+    <!-- paralax scroll effect / main home -->
+    <section class="paralax">
+        <img src="images/stars.png" alt="stars" id="stars">
+        <h1 id="paralax-text" class="hidden">Interactions</h1>
+    </section>
+    <!-- shape divider -->
+    <div class="custom-shape-divider-bottom-1713735126">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill1"></path>
+        </svg>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- html css js w the web -->
+    <div class="interactions">
+        <div>
+            <h2>HTML</h2>
+            <p>Basically the content on a webpage: text, links, images, etc</p>
+        </div>
+        <div>
+            <h2>CSS</h2>
+            <p>Now with CSS you can now style that content, nearly infinite possibilities!</p>
+        </div>
+        <div>
+            <h2>JS</h2>
+            <p>With JavaScript, the options are endless...</p>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- ALL javascript event types -->
+    <div class="explain">
+        <h3>All Event Types with JavaScript</h3>
+        <h5>How Interactions on the Web can happen!</h5>
+        <div class="ite">
+            <h4>Mouse Events</h4>
+            <div>
+                <ion-icon name="radio-button-on-outline"></ion-icon>
+                <p>Events triggered by mouse actions such as clicks, hovers, and drags. These events allow you to
+                    respond to user interactions with elements on the webpage</p>
+            </div>
+        </div>
+        <div class="ite">
+            <h4>Keyboard Events</h4>
+            <div>
+                <ion-icon name="radio-button-on-outline"></ion-icon>
+                <p>Events triggered by keyboard actions such as key presses, key releases, and typing</p>
+            </div>
+        </div>
+        <div class="ite">
+            <h4>Window Events</h4>
+            <div>
+                <ion-icon name="radio-button-on-outline"></ion-icon>
+                <p>Events related to the browser window, such as resizing, scrolling, loading, and unloading. These
+                    events can be used to create responsive designs, trigger animations, or perform actions when the
+                    page is scrolled or resized</p>
+            </div>
+        </div>
+        <div class="ite">
+            <h4>Document Object Model (DOM)</h4>
+            <div>
+                <ion-icon name="radio-button-on-outline"></ion-icon>
+                <p>The DOM represents the structure of a webpage as a hierarchical tree of objects. JavaScript can be
+                    used to manipulate the DOM, allowing you to dynamically change the content, style, and structure of
+                    a webpage in response to user actions or events</p>
+            </div>
+        </div>
+        <div class="ite">
+            <h4>Selectors</h4>
+            <div>
+                <ion-icon name="radio-button-on-outline"></ion-icon>
+                <p>Selectors allow you to target specific elements on the webpage using CSS-like syntax. You can select
+                    elements by their ID, class, tag name, or other attributes, and then manipulate or interact with
+                    them using JavaScript</p>
+            </div>
+        </div>
+        <div class="ite">
+            <h4>Event Listeners</h4>
+            <div>
+                <ion-icon name="radio-button-on-outline"></ion-icon>
+                <p>Event listeners are functions that are attached to HTML elements to listen for specific events, such
+                    as clicks, hovers, or key presses. When the specified event occurs, the listener function is
+                    executed, allowing you to respond to user interaction</p>
+            </div>
+        </div>
+        <div class="ite">
+            <h4>and even more!</h4>
+            <div>
+                <ion-icon name="radio-button-on-outline"></ion-icon>
+                <p>Form Validation, AJAX, Animations and Transitions, Local Storage & Cookies</p>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- INTERACTIONS ON THIS SITE -->
+    <div class="explain">
+        <h3>Interactions on this website</h3>
+        <h5>Did you find them all?</h5>
+        <div class="inters">
+            <figure>
+                <img src="images/circle-in.png" alt="running circle">
+                <figcaption>the circle runs away from the mouse, whenever the mouse touches/hovers it... it moves to a
+                    random location on the screen.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/windows.png" alt="running circle">
+                <figcaption>windows have a hover effect that navigates to a page with an animated/interactive gradient
+                    display</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ok.png" alt="running circle">
+                <figcaption>one of the radial gradient circles has an easter egg that can be discovered when clicking
+                    it. the striped circles have animation effects </figcaption>
+            </figure>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer>
+        <p>made by Isa Dockter | source code -></p>
+        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+    </footer>
+    <script defer src="js/music.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../images/back-test.jpeg);
+    background-repeat: repeat;
+    /* Prevent the background image from repeating */
+    background-size: contain;
+    /* Ensure the background image covers the entire container */
+    background-position: center center;
+    /* Center the background image horizontally and vertically */
+    width: 100%;
+    height: 100%;
+    opacity: 0.92;
+    z-index: 0.1;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+}
+
+h4 {
+    font-size: 26px;
+    color: white;
+
+}
+
+.game {
+    max-width: 1000px;
+    margin: 0 50px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.game div {
+    max-width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(37, 12, 62);
+}
+
+.float {
+    padding: 0 100px;
+    font-size: 18px;
+}
+
+ion-icon {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* animated gradient */
+.absolute {
+    position: absolute;
+    top: 50px !important;
+    inset: 0;
+    justify-content: center;
+    display: inline-flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.bg-shape1 {
+    width: 500px;
+    height: 400px;
+    border-radius: 80%;
+    position: relative;
+    animation: one 10s infinite;
+}
+
+.bg-shape2 {
+    width: 600px;
+    height: 400px;
+    border-radius: 999px;
+    position: relative;
+    animation: two 8s infinite;
+}
+
+.bg-shape2:hover,
+.bg-shape1:hover,
+.bg-shape3:hover,
+.bg-shape4:hover {
+    opacity: 0.9;
+    scale: 1.1;
+}
+
+.bg-shape3 {
+    width: 600px;
+    height: 600px;
+    border-radius: 999px;
+    position: relative;
+    animation: one 9s infinite;
+}
+
+.bg-shape4 {
+    width: 400px;
+    height: 500px;
+    border-radius: 999px;
+    position: relative;
+    animation: two 12s infinite;
+}
+
+.bg-shape5 {
+    width: 600px;
+    height: 500px;
+    border-radius: 999px;
+    position: relative;
+    animation: one 7s infinite;
+}
+
+@keyframes one {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: -100px;
+        top: 70px;
+    }
+
+    30% {
+        left: -50;
+        top: 80px;
+    }
+
+    50% {
+        left: 20px;
+        top: 150px;
+    }
+
+    75% {
+        left: 50px;
+        top: 100px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes two {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 50px;
+        top: 10px;
+    }
+
+    50% {
+        left: 100px;
+        top: 50px;
+    }
+
+    75% {
+        left: 50px;
+        top: 100px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.opacity-50 {
+    opacity: 0.7;
+}
+
+.bg-blur {
+    filter: blur(70px);
+}
+
+h1 {
+    margin: 0 auto;
+    top: 200px;
+    text-align: center;
+
+}
+
+/* scoreboard */
+.scoreboard {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8000ff;
+}
+
+#about {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+#about ion-icon {
+    color: white;
+    font-size: 40px;
+}
+
+button {
+    all: unset;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    /* Adjust as needed */
+    left: 20px;
+    /* Adjust as needed */
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1000;
+    /* Ensure the scoreboard is above other content */
+    color: #8000ff;
+}
+
+#music-info {
+    font-weight: 500;
+}
+
+.music-sec {
+    background-color: rgb(255, 122, 110);
+    height: 100vh;
+}
+
+/* nav */
+nav {
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+nav .logo {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #fff;
+    color: #2b1055;
+}
+
+.nav-flex {
+    display: flex;
+}
+
+.nav-flex ion-icon {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: none;
+        padding: 20px;
+        max-width: 100%;
+        margin-right: 10px;
+        box-sizing: border-box;
+        text-align: right;
+
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-flex ion-icon {
+        visibility: visible;
+    }
+
+    nav {
+        align-items: flex-start;
+    }
+
+    .windows {
+        margin: 0 20px;
+    }
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    visibility: visible;
+
+}
+
+section {
+    height: auto;
+    background-color: #45377A;
+
+}
+
+/* SVG */
+.custom-shape-divider-bottom-1713735126 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 100;
+}
+
+.custom-shape-divider-bottom-1713735126 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 230px;
+}
+
+.custom-shape-divider-bottom-1713735126 .shape-fill {
+    fill: #45377A;
+}
+
+.custom-shape-divider-bottom-1713735126 .shape-fill1 {
+    fill: #374c7a;
+}
+
+.interactions {
+    width: 100%;
+    background-color: #374c7a;
+    justify-content: center;
+    gap: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.interactions div {
+    width: 250px;
+    max-height: 250px;
+    background-color: #243251;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.interactions h2 {
+    text-align: center;
+}
+
+.inters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.explain {
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #374c7a;
+}
+
+.explain figure {
+    max-width: 200px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px 30px;
+}
+
+.explain h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.explain h5 {
+    text-align: center;
+    color: rgb(237, 214, 255);
+    font-size: 18px;
+}
+
+.explain div {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.explain div div {
+    display: flex;
+}
+
+.explain p {
+    font-size: 18px;
+}
+
+.explain h4 {
+    font-weight: 400;
+    color: rgb(237, 214, 255);
+    margin-bottom: 5px;
+}
+
+.explain ion-icon {
+    color: rgb(237, 214, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.ite {
+    padding: 10px 0;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.paralax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+.paralax::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+}
+
+.paralax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.paralax img#moon {
+    mix-blend-mode: screen;
+    padding-right: 100px;
+}
+
+.back {
+    transform: translateY(400px);
+}
+
+.back-build {
+    z-index: 100;
+}
+
+section #paralax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#paralax {
+    position: relative;
+
+}
+
+.build-back {
+    z-index: 5;
+}
+
+.windows {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 100px;
+    padding: 20px 0;
+    background-color: #0b0021;
+    border-radius: 1rem;
+    border: 4px solid white;
+
+}
+
+.windows img {
+    max-width: 250px;
+    margin: 60px 60px;
+}
+
+/* load animation */
+#preloader {
+    height: 100%;
+    width: 100%;
+    background: #333;
+    position: relative;
+}
+
+.preload-item {
+    position: absolute;
+    width: 40px;
+    aspect-ratio: 1;
+    border: 2px solid rgb(78, 78, 200);
+    border-radius: 100vh;
+    top: 280px;
+    left: 50%;
+    translate: -50% -50%;
+    animation: preloader-animation 4s linear infinite var(--_delay, 0s);
+}
+
+.preload-item:nth-child(2) {
+    --_delay: .5s;
+}
+
+.preload-item:nth-child(3) {
+    --_delay: 1s;
+}
+
+.preload-item:nth-child(4) {
+    --_delay: 1.5s;
+}
+
+.preload-item:nth-child(5) {
+    --_delay: 2s;
+}
+
+.preload-item:nth-child(6) {
+    --_delay: 2.5s;
+}
+
+.preload-item:nth-child(7) {
+    --_delay: 3s;
+}
+
+.preload-item:nth-child(8) {
+    --_delay: 3.5s;
+}
+
+@keyframes preloader-animation {
+    from {
+        opacity: 0;
+        border-color: white;
+    }
+
+    20%,
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        width: 300px;
+        border-color: rgb(106, 106, 196);
+    }
+}
+
+.stairs {
+    width: 100%;
+}
+
+.lil-bit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0b0021;
+    padding: 100px 0;
+}
+
+.lil-bit figure {
+    color: white;
+    max-width: 300px;
+    padding: 10px 20px;
+    margin: 40px 50px;
+    text-align: center;
+}
+
+
+.lil-bit figure img {
+    max-width: 250px;
+    height: auto;
+}
+
+.lil-bit figcaption {
+    font-size: 24px;
+}
+
+.windows img {
+    width: 400px;
+    clear: left;
+    margin-bottom: 1px;
+}
+
+.windows figcaption {
+    background-color: none;
+    color: white;
+    max-width: 400px;
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    float: right;
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+}
+
+.windows figure {
+    position: relative;
+    float: left;
+}
+
+.spacer {
+    aspect-ratio: 960/600;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.spacer img {
+    margin: 100px 0 0 0;
+    max-width: 350px;
+    max-height: 350px;
+    z-index: 1;
+}
+
+.spacer img:nth-child(odd) {
+    margin: 100px 0 0 0;
+    max-width: 200px;
+    max-height: 200px;
+    z-index: 1;
+}
+
+.waves {
+    background-image: url(../images/ayo.svg);
+}
+
+.stacked {
+    background-image: url(../images/stacked.svg);
+
+}
+
+.stacked1 {
+    background-image: url(../images/stacked1.svg);
+
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #FF6F61;
+    height: 100vh;
+}
+
+article .well {
+    background-color: #2b1956;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 3px solid #ccc4dd;
+    color: white;
+    animation: move-up 2s infinite alternate;
+
+}
+
+footer {
+    background-color: #2b1956;
+    padding: 20px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ion-icon {
+    color: white;
+    font-size: 30px;
+    margin: 0 0 0 5px;
+    transition: scale 1s ease;
+}
+
+footer ion-icon:hover {
+    color: lightblue;
+    scale: 1.2;
+
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.three {
+    height: 100vh;
+    background-color: #0b0021;
+    color: white;
+}
+
+.three p {
+    font-size: 24px;
+    top: 0;
+}
+
+.circs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.circs img {
+    max-width: 300px;
+}
+
+.circs img:nth-child(odd) {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.anotha {
+    width: 100px;
+    height: 100px;
+    left: 200px;
+    border-radius: 50%;
+    background-color: rgb(57, 133, 61);
+    position: absolute;
+    z-index: 100;
+    animation: rotate 4s ease-in-out infinite;
+
+}
+
+.anotha::before {
+    content: '.';
+    color: none;
+    width: 10px;
+    height: 50px;
+    background-color: rgb(218, 118, 17);
+}
+
+
+.rotate {
+    animation: rotate 5s ease-in-out infinite;
+}
+
+.rotate1 {
+    animation: rotate1 5s ease-in-out infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    /* 0 - 50 - 100% */
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #45377A;
+    border-radius: 50%;
+    display: block;
+}
+
+h2 {
+    font-size: 32px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+}
+
+/* modal */
+.modal-outer {
+    display: grid;
+    background: rgba(182, 173, 189, 0.7);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+    /* Hide this modal until we need it */
+    pointer-events: none;
+    z-index: 1000;
+
+}
+
+.modal-inner {
+    max-width: 600px;
+    min-width: 400px;
+    padding: 2rem;
+    border-radius: 6px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: black;
+    text-align: center;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+.modal-inner h3 {
+    padding-bottom: 40px;
+}
+
+.modal-inner p {
+    font-size: 14px;
+    margin-bottom: auto;
+}
+
+.modal-outer.open .modal-inner {
+    transform: translateY(0);
+}
+
+.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* blobs!! */
+
+.image-group {
+    margin: 0 auto;
+    margin-right: 250px;
+    text-align: center;
+    width: 400px;
+    position: relative;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 150px;
+}
+
+.circle1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 100px;
+}
+
+.circle2 {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    left: 100px;
+}
+
+.circle3 {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    left: 100px;
+}
+
+.circle4 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 100px;
+    transform: rotate(180deg);
+}
+
+.ayo {
+    opacity: 0.2;
+
+}
+
+.blob {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.blob img {
+    width: 100px;
+    height: auto;
+    margin: -30px 70px;
+    animation: move-down 1s infinite alternate;
+}
+
+.blob img:nth-child(odd) {
+    animation: move-up 1s infinite alternate;
+}
+
+.blob-large {
+    animation: move-up 1s infinite alternate;
+}
+
+.blob-bean {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 2.5rem;
+    left: -1rem;
+    z-index: 10;
+    animation: move-down 2s infinite alternate;
+}
+
+/*Animations*/
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate1 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0.5);
+
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes move-up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(2rem);
+    }
+}
+
+
+@keyframes move-down {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-2rem);
+    }
+}
+
+@keyframes hue-shift {
+    from {
+        filter: hue-rotate(0);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* HOVER CSS */
+/* from https://github.com/IanLunn/Hover */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+    animation: hue-shift 5s infinite alternate;
+
+}
+
+
+/* Shrink */
+.hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-shrink:hover,
+.hvr-shrink:focus,
+.hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pulse-grow:hover,
+.hvr-pulse-grow:focus,
+.hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}

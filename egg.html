@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas1 {
+    background: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#controls {
+    position: absolute;
+    padding: 10px;
+    border: 2px solid white;
+    left: 20px;
+    top: 20px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 0.7;
+}
+
+button {
+    padding: 10px 40px;
+    width: 225px;
+    font-size: 20px;
+}
+
+label, input {
+    color: white;
+    font-size: 20px;
+}
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas1"></canvas>
+    <div id="controls">
+        <button id="randomizeButton">Randomize!</button>
+        <button id="delete">Delete</button>
+        <div>
+            <label for="spread">Spread: </label>
+            <input id="spread" type="range" min="0.1" max="3.1" step="0.05" value="1">
+        </div>
+    </div>
+    <script src="js/frac.js"></script>
+</body>
+
+</html>

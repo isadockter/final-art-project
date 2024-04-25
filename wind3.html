@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- nav -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- custom -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- scrolling js -->
+    <script defer src="js/site.js"></script>
+    <style>
+        .color1 {
+            background-color: #464696;
+        }
+
+        .color2 {
+            background-color: #82469b;
+        }
+
+        .color3 {
+            background-color: #96c864;
+        }
+
+        .color4 {
+            background-color: #5ac88c;
+        }
+
+        .color5 {
+            background-color: #4687c3;
+        }
+
+        @keyframes colorChange {
+            to {
+                background-position: top left;
+            }
+        }
+    </style>
+    <title>Explore</title>
+</head>
+
+<body style="background-color: #120625;">
+    <!--------------------------------------------------------------------------------------------------------->
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#" class="logo">interact</a>
+        <div class="nav-flex">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="interactions.html">Interactions</a></li>
+                <li><a href="music.html">Music</a></li>
+            </ul>
+            <ion-icon onclick="onToggleMenu(this)" size="large" style="color:white;" name="menu"
+                class="menu"></ion-icon>
+        </div>
+    </nav>
+    <div class="absolute">
+        <div class="absolute inset-0 justify-center">
+            <div class="bg-shape1 color1 opacity-50 bg-blur"></div>
+            <div class="bg-shape2 color2 opacity-50 bg-blur"></div>
+            <div class="bg-shape3 color3 opacity-50 bg-blur"></div>
+            <div class="bg-shape4 color4 opacity-50 bg-blur"></div>
+            <div class="bg-shape5 color5 opacity-50 bg-blur"></div>
+
+        </div>
+        
+        <div>
+            <h1>Hello World</h1>
+        </div>
+    </div>
+</body>
+
+</html>
