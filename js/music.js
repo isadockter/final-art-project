@@ -1,5 +1,5 @@
 var musicFiles = [
-    { src: "audio/infinity.mp3", artist: " ", title: "Infinity Repeating" },
+    { src: "audio/infinity.mp3", artist: "Daft Punk", title: "Infinity Repeating" },
     { src: "audio/sorry-bro.mp3", artist: "SALES", title: "Sorry Bro" },
     { src: "audio/backwards.mp3", artist: "SALES", title: "Moving by Backwards" },
     { src: "audio/off-on.mp3", artist: "SALES", title: "Off n On" }
